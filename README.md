@@ -3,18 +3,19 @@
 ## Overview
 
 This project is focused on:
+
 1. **Understanding** the paper ["Allocating Resources for Stream Data Using RL"](https://arxiv.org/abs/1911.08517) and its official Python code implementation.
 2. **Running and potentially improving** the authors’ code (a Deep Reinforcement Learning model) that optimizes resource allocation in stream data processing.
 3. **Investigating Apache Flink's** scheduling framework to see how we can **replace Flink’s built-in scheduler** with the RL model from the paper.
 
 ---
-./images/flink_logo.png
 
-
+![Apache Flink & RL Integeration](images/img1.png)
 
 ---
 
 ## Project Structure
+
 project/<br>
 ├── paper/<br>
 │ └── 1911.08517.pdf # The research paper<br>
