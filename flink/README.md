@@ -26,7 +26,7 @@ link: [Download JAR](../jar_files/wordCount_example.jar)
 
 ## command to run the jar file (program)
 
-WC run command:
+**WC run command:**<br/>
 flink run ~/Desktop/DataSet/wordCount_example.jar --input file:///home/a/Desktop/DataSet/input.txt --output file:///home/a/Desktop/DataSet/output.txt
 
 ---
@@ -63,5 +63,5 @@ This Apache Flink program reads two input files: person.txt containing person ID
 
 ## command to run the jar file (program)
 
-Join run command:
+**Join run command:**<br/>
 flink run ~/Desktop/DataSet/J_example.jar --input1 file:///home/a/Desktop/DataSet/person.txt --input2 file:///home/a/Desktop/DataSet/location.txt --i_output file:///home/a/Desktop/DataSet/innerJoin.txt --l_output file:///home/a/Desktop/DataSet/leftJoin.txt --r_output file:///home/a/Desktop/DataSet/rightJoin.txt
