@@ -24,9 +24,16 @@ This Word Count program is built using Apache Flink and processes text data to c
 
 link: [Download JAR](../jar_files/wordCount_example.jar)
 
+## command to run the jar file (program)
+
+WC run command:
+flink run ~/Desktop/DataSet/wordCount_example.jar --input file:///home/a/Desktop/DataSet/input.txt --output file:///home/a/Desktop/DataSet/output.txt
+
 ---
 
 ## Join Program
+
+This Apache Flink program reads two input files: person.txt containing person IDs and names, and location.txt containing IDs and locations. It performs three types of join operations—inner join, left outer join, and full outer join—based on matching IDs. The inner join returns records with matching IDs in both files, the left outer join includes all persons and adds location data if available, and the full outer join combines all records from both files, inserting null where no match exists. This demonstrates how Flink handles relational-style joins in a distributed data processing environment.
 
 ### input
 
@@ -53,3 +60,8 @@ link: [Download JAR](../jar_files/wordCount_example.jar)
 ![Inner Join program Flowchart](../images/InnerJoin.drawio.png)
 
 ### JarFile: link: [Download JAR](../jar_files/J_example.jar)
+
+## command to run the jar file (program)
+
+Join run command:
+flink run ~/Desktop/DataSet/J_example.jar --input1 file:///home/a/Desktop/DataSet/person.txt --input2 file:///home/a/Desktop/DataSet/location.txt --i_output file:///home/a/Desktop/DataSet/innerJoin.txt --l_output file:///home/a/Desktop/DataSet/leftJoin.txt --r_output file:///home/a/Desktop/DataSet/rightJoin.txt
