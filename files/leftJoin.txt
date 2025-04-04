@@ -1,0 +1,6 @@
+1, John, DC
+2, Albert, NY
+3, Lui, Null
+4, Smith, LA
+5, Robert, Null
+1, Mohammed, DC
