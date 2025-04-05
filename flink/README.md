@@ -100,3 +100,31 @@ flink run ~/Desktop/dataStream/WordCount_streaming.jar --output file:///home/a/D
 
 
 ---
+
+## Average Profit Program 
+This Apache Flink program reads sales data containing date, month, category, item, and profit. It groups the data by month and calculates the average profit per item sold for each month. This example showcases Flink’s capability to perform aggregations and transformations on structured streaming data.
+
+### input/output
+
+| input file [avg.txt](../files/streaming/avg.txt) | output file [avg_output.txt](../files/streaming/avg_output.txt) |
+| -------------------------------------------- | ----------------------------------------------------- |
+| 01-06-2018,June,Category5,Bat,12              | (June,12.0)                                           |
+| 01-06-2108,June,Category4,Perfume,10          | (June,11.0)                                           |
+| 13-07-2018,July,Category1,Television,50       | (July,50.0)                                           |
+| ...                                          | ...                                                  |
+| 26-08-2018,August,Category1,Watch,39          | (August,34.44444444444444)                           |
+
+### Program flowchart
+
+![Average Profit Flowchart](../images/avg_profit_flow.png)
+
+### Jar File
+
+link: [Download JAR](../jar_files/avgProfit_streaming.jar)
+
+## command to run the jar file (program)
+
+**Average Profit run command:**  
+flink run ~/Desktop/dataStream/avgProfit_streaming.jar --input file:///home/a/Desktop/dataStream/avg.txt --output file:///home/a/Desktop/dataStream/avg_output.txt
+
+---
