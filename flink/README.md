@@ -65,3 +65,24 @@ This Apache Flink program reads two input files: person.txt containing person ID
 
 **Join run command:**<br/>
 flink run ~/Desktop/DataSet/J_example.jar --input1 file:///home/a/Desktop/DataSet/person.txt --input2 file:///home/a/Desktop/DataSet/location.txt --i_output file:///home/a/Desktop/DataSet/innerJoin.txt --l_output file:///home/a/Desktop/DataSet/leftJoin.txt --r_output file:///home/a/Desktop/DataSet/rightJoin.txt
+
+## Word Count Streaming Program
+This streaming Word Count program uses Apache Flink to process live text data from port 9999. It filters words starting with "N" and continuously updates their counts in real-time, demonstrating Flink’s streaming and stateful processing capabilities.
+
+## input/ Output
+
+| input (listening on the port 9999 for stream data) | output file [wc_stream.txt](../files/streaming/wc_streaming_output.txt) |
+| ------------------------------------------ | --------------------------------------------- |
+| Ni                                         | (Ni,1)                                        |
+| Noman                                      | (Noman,1)                                     |
+| Noman                                      | (Noman,2)                                     |
+| Nickle                                     | (Nickle,1)                                    |
+| Nickle                                     | (Nickle,2)                                    |
+| .                                          | .                                             |
+| .                                          | .                                             |
+
+## program flowchart
+
+## Jar File
+
+link: [Download JAR](../jar_files/WordCount_streaming.jar)
