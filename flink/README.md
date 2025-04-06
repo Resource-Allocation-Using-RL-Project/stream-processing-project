@@ -116,7 +116,7 @@ This Apache Flink program reads sales data containing date, month, category, ite
 
 ### Program flowchart
 
-![Average Profit Flowchart](../images/avg_profit_flow.png)
+![Average Profit Flowchart](../images/AVG_profit.drawio.png)
 
 ### Jar File
 
